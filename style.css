@@ -101,7 +101,7 @@ button {
 
 .buttonSmall {
   font-weight: 600;
-  padding: 10px 47px;
+  padding: 15px 48px;
 }
 
 /* Backgrounds */
@@ -134,8 +134,20 @@ button {
   font-weight: 500;
 }
 
+.weightRegular {
+  font-weight: 400;
+}
+
 .textCenter {
   text-align: center;
+}
+
+.text56px {
+  font-size: 56px;
+}
+
+.text46px {
+  font-size: 46px;
 }
 
 .text32px {
@@ -147,7 +159,8 @@ button {
 }
 
 .text15px {
-  font-size: 15.09px;
+  /* font-size: 15.09px; */
+  font-size: 14.9999px;
 }
 
 /* Text Color */
@@ -192,11 +205,30 @@ nav ul {
 .logo p {
   margin-left: 12px;
 }
+
+/* Hero Section */
+.heroCTA {
+  align-items: flex-start;
+  max-width: 640px;
+  gap: 24px;
+}
+
+.lineHeight {
+  line-height: 1.5;
+}
+
 /* Cards */
 /* Curriculum Cards */
+.curriculum {
+  padding: 60px 0;
+  background-image: url('./assets/bg.png');
+  background-size: cover;
+}
+
 .curriculumCards {
   gap: 28.29px;
-  background: li;
+  /* background: li; */
+  padding: 80px 0 87px 0;
 }
 .curriculumCard {
   border-radius: 18.86px;
@@ -204,7 +236,7 @@ nav ul {
 }
 
 .curriculumCardContentGap {
-  gap: 33px;
+  gap: 38px;
 }
 
 .bgBlueGradient {
@@ -222,17 +254,30 @@ nav ul {
   border: 1px solid #f2e8ff;
 }
 
+.slideBTNs {
+  gap: 10px;
+}
+
+.lineHeightAlt {
+  line-height: 1.8;
+}
+
 /* Stories Card */
+.stories {
+  padding: 60px 0;
+  background-image: url('./assets/bg.png'),
+    linear-gradient(to top, #fea301 -200%, #ffffff 100%);
+}
+
 .storiesCards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 19.17px;
+  padding: 80px 0 80px 0;
 }
 
 .storiesCard {
   border-radius: 16px;
-
-  border: 3px solid hotpink;
 }
 
 .storiesCard img {
@@ -257,3 +302,5 @@ nav ul {
   grid-row: span 2;
   grid-column: span 2;
 }
+
+/*  */
