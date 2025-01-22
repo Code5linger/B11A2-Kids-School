@@ -27,13 +27,15 @@ Raleway
   /* Text - Color */
   --orange: orange;
   --orangeLight: #f0aa00;
-  --skyBlue: #01acfd; /*   +1   */
+  --skyBlue: #01acfd;
   --lightBlue: #64c8ff;
+  --blue: #3cd8e8;
   --teal: #05d4df;
   --purple: #5d58ef;
   --purpleLight: #8700ff;
   --black-dim: #111111;
-  --black-solid: #000000; /*   +1+1   */
+  --black-solid: #000000;
+  --green: #95b226;
 }
 
 *,
@@ -111,6 +113,14 @@ button {
   background: var(--orange);
 }
 
+.bgGreen {
+  background: var(--green);
+}
+
+.bgBlue {
+  background: var(--blue);
+}
+
 /* Text */
 .raleway {
   font-family: 'Raleway', serif;
@@ -177,4 +187,40 @@ button {
 .bgPurpleGradient {
   background-image: linear-gradient(to bottom, #f2e8ff 0%, #ffffff 40%);
   border: 1px solid #f2e8ff;
+}
+
+/* Stories Card */
+.storiesCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 19.17px;
+}
+
+.storiesCard {
+  border-radius: 16px;
+
+  border: 3px solid hotpink;
+}
+
+.storiesCard img {
+  border-radius: 16px 16px 0 0;
+}
+
+.storiesCardsTxt {
+  position: relative;
+  border-radius: 0 0 16px 16px;
+  padding: 33px 37px;
+}
+
+.storiesCardDate {
+  position: absolute;
+  top: -18px;
+  left: 34px;
+  border-radius: 47.93px;
+  padding: 10px 19px;
+}
+
+.featured {
+  grid-row: span 2;
+  grid-column: span 2;
 }
