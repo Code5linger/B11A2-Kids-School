@@ -125,6 +125,14 @@ button {
   background: var(--blue);
 }
 
+.bgWhite {
+  background: white;
+}
+
+.bgPur {
+  background: #5d58f0;
+}
+
 /* Text */
 .raleway {
   font-family: 'Raleway', serif;
@@ -317,6 +325,7 @@ nav ul {
 .featured {
   grid-row: span 2;
   grid-column: span 2;
+  height: 100%;
 }
 
 /* Footer */
@@ -388,10 +397,21 @@ footer {
   }
 
   /* Stories */
-  .stories p {
-    font-size: 26px;
-    text-align: center;
+  .storiesCardsTxt {
+    padding: 33px 16px;
   }
+
+  .storiesCard p {
+    font-size: 12px;
+  }
+
+  .storiesCardDate {
+    left: 15px;
+  }
+  .stories div p .storiesTitle {
+    font-size: 26px;
+  }
+
   .curriculumCards {
     flex-direction: column;
     margin: 16.5px;
