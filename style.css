@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* Text */
+
+  /* Font Familly */
+  /* QuickSand 
+    Bold +1+1+1+1+1+1+1+1+1+1+1
+    SemiBold
+    Medium +1+1+1+1
+    Regular +1
+    56
+    46  +1
+    42.14 
+    32  
+    26
+    24.52
+    24  +1
+    20  +1+1+1+1+1
+Raleway
+    Bold    +1
+    Medium  +1+1+1
+    15.09   + 1
+    15.34   +1 */
+
+  /* Text - Color */
+  --orange: orange;
+  --skyBlue: #01acfd; /*   +1   */
+  --teal: #05d4df;
+  --purple: #5d58ef;
+  --black-dim: #111111;
+  --black-solid: #000000; /*   +1+1   */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+body {
+  /* background: black; */
+}
+
+/* Buttons */
+button {
+  font-family: 'Quicksand', serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 12px;
+  padding: 10px 61px;
+  outline: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonSmall {
+  font-weight: 600;
+  padding: 10px 47px;
+}
+
+/* Backgrounds */
+.bgDarkDim {
+  background: var(--black-dim);
+}
+
+.bgDarkSolid {
+  background: var(--black-solid);
+}
+
+.bgOrange {
+  background: var(--orange);
+}
+
+/* Text Color */
+.txtWhite {
+  color: white;
+}
+
+/* Cards */
+/* Curriculum Cards */
+.curriculumCards {
+  background: crimson;
+}
