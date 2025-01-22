@@ -218,6 +218,10 @@ nav ul {
   margin-left: 12px;
 }
 
+.hamburger {
+  display: none;
+}
+
 /* Hero Section */
 .heroCTA {
   align-items: flex-start;
@@ -340,4 +344,72 @@ footer {
 
 .paddingBottom32 {
   padding-bottom: 32px;
+}
+
+@media only screen and (max-width: 425px) {
+  /* body {
+    margin: 0 16px;
+  } */
+  nav .container,
+  .heroContainer,
+  .storiesCards,
+  .footerCoontaier {
+    margin: 0 16px;
+  }
+  /* Nav Menu */
+  .logoTxt {
+    display: none;
+  }
+  nav {
+    border-bottom: 1px solid #fea301;
+  }
+  nav ul {
+    display: none;
+  }
+  nav button {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  /* Hero Container */
+  .heroContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .heroCTA {
+    order: 1;
+    align-items: center;
+  }
+  .curriculum p {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  /* Stories */
+  .stories p {
+    font-size: 26px;
+    text-align: center;
+  }
+  .curriculumCards {
+    flex-direction: column;
+    margin: 16.5px;
+  }
+  .slideBTNs {
+    display: none;
+  }
+  .storiesCards {
+    grid-template-columns: 1fr 1fr;
+    gap: 11px;
+  }
+  .featured {
+    display: none;
+  }
+
+  /* Footer  */
+  .footerCoontaier {
+    flex-direction: column;
+    gap: 32px;
+  }
 }
