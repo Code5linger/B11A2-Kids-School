@@ -9,6 +9,7 @@
     SemiBold
     Medium +1+1+1+1
     Regular +1
+
     56
     46  +1
     42.14 
@@ -25,9 +26,12 @@ Raleway
 
   /* Text - Color */
   --orange: orange;
+  --orangeLight: #f0aa00;
   --skyBlue: #01acfd; /*   +1   */
+  --lightBlue: #64c8ff;
   --teal: #05d4df;
   --purple: #5d58ef;
+  --purpleLight: #8700ff;
   --black-dim: #111111;
   --black-solid: #000000; /*   +1+1   */
 }
@@ -42,7 +46,39 @@ Raleway
 }
 
 body {
-  /* background: black; */
+  font-family: 'Quicksand', serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.horizontalCenter {
+  align-items: center;
 }
 
 /* Buttons */
@@ -75,13 +111,70 @@ button {
   background: var(--orange);
 }
 
+/* Text */
+.raleway {
+  font-family: 'Raleway', serif;
+}
+
+.weightMedium {
+  font-weight: 500;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.text24px {
+  font-size: 24.52px;
+}
+
+.text15px {
+  font-size: 15.09px;
+}
+
 /* Text Color */
 .txtWhite {
   color: white;
 }
 
+.txtBlue {
+  color: var(--lightBlue);
+}
+
+.txtOrange {
+  color: var(--orangeLight);
+}
+
+.txtPurple {
+  color: var(--purpleLight);
+}
+
 /* Cards */
 /* Curriculum Cards */
 .curriculumCards {
-  background: crimson;
+  gap: 28.29px;
+  background: li;
+}
+.curriculumCard {
+  border-radius: 18.86px;
+  padding: 53.29px 40.775px;
+}
+
+.curriculumCardContentGap {
+  gap: 33px;
+}
+
+.bgBlueGradient {
+  background-image: linear-gradient(to bottom, #def5ff 0%, #ffffff 40%);
+  border: 1px solid #def5ff;
+}
+
+.bgYellowGradient {
+  background-image: linear-gradient(to bottom, #fff4dc 0%, #ffffff 40%);
+  border: 1px solid #fff4dc;
+}
+
+.bgPurpleGradient {
+  background-image: linear-gradient(to bottom, #f2e8ff 0%, #ffffff 40%);
+  border: 1px solid #f2e8ff;
 }
