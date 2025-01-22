@@ -150,12 +150,24 @@ button {
   font-size: 46px;
 }
 
+.text40px {
+  font-size: 40px;
+}
+
 .text32px {
   font-size: 32px;
 }
 
+.text26px {
+  font-size: 26px;
+}
+
 .text24px {
   font-size: 24.52px;
+}
+
+.text20px {
+  font-size: 20px;
 }
 
 .text15px {
@@ -303,4 +315,29 @@ nav ul {
   grid-column: span 2;
 }
 
-/*  */
+/* Footer */
+footer {
+  background: var(--skyBlue);
+  padding: 123px 0;
+}
+
+.footerCTA {
+  max-width: 400px;
+}
+
+.footerContact {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.socialLinks {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.paddingBottom32 {
+  padding-bottom: 32px;
+}
